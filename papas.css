@@ -183,19 +183,27 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 15px;
-    font-family: "Fredokka", sans-serif;
-    color: #ff6f3c;
+    font-family: "Fredoka", sans-serif;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+    animation: fadeTitulo 0.8s ease-out;
 }
 
 .logo-papa {
-    width: 60px;
+    width: 65px;
     height: auto;
     object-fit: contain;
-    animation: popIn 05s ease-out;
+    animation: popIn 0.5s ease-out;
 }
 
 @keyframes popIn {
-    from { transform: scale(0.5); opacity: 0;}
-    to (transform scale(1); opacity: 1;)
-    
+    from { transform: scale(0.5); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeTitulo {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
 }

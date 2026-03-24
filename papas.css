@@ -52,5 +52,14 @@ h1 {
     color: #fffacd;
 }
 
+section {
+    padding: 40px 20px;
+}
+
+.grid-jogos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px; 
+}
 
 

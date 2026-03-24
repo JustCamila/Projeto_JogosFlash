@@ -62,4 +62,19 @@ section {
     gap: 20px; 
 }
 
+.card {
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0,1);
+    text-align: center;
+    font-weight: bold;
+    transition: transform .3, background .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: #ffefd5;
+}
+
 

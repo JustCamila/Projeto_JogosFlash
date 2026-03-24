@@ -179,3 +179,23 @@ button:hover {
     
 }
 
+.titulo-site {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: "Fredokka", sans-serif;
+    color: #ff6f3c;
+}
+
+.logo-papa {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    animation: popIn 05s ease-out;
+}
+
+@keyframes popIn {
+    from { transform: scale(0.5); opacity: 0;}
+    to (transform scale(1); opacity: 1;)
+    
+}

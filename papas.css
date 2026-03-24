@@ -168,4 +168,14 @@ button:hover {
     position: relative;
 }
 
+.formulario h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #ff9f68;
+    display: block;
+    margin: 10px;
+    border-radius: 5px;
+    
+}
 

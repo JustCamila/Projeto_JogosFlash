@@ -9,5 +9,23 @@ body {
     background: #fef9ef;
     color: #333;
     padding-top: 90px;
-
 }
+
+h1 {
+    font-family: "Fredoka", sans-serif;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ff8c5a;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba (0,0,0,0,2);
+    animation: deslizarHeader 1s ease;
+}
+

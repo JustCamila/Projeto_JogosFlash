@@ -77,3 +77,11 @@ section {
     transform: translateY(-8px);
     background: #ffefd5;
 }
+
+.card img {
+    width: 100%;
+    height: autor;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

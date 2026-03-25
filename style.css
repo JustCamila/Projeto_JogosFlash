@@ -51,6 +51,9 @@ body {
     font-size: 15px;
 }
 
+.menu a:hover {
+    color: #2f3542;
+}
 
 .main {
     padding: 40px 20px;

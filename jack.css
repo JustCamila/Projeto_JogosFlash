@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Iosevka Charon", sans-serif;
+    background: #fef9ef;
+    color: #333;
+    padding-top: 90px;
+}
+
+h1 {
+    font-family: "MedievalSharp", sans-serif;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #04330e;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    animation: deslizarHeader 1s ease;
+}
+
+@keyframes deslizarHeader {
+    from { transform: translateY(-100px); }
+    to { transform: translateY(0); }
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    transform: scale(1.1);
+    color: #fffacd;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.grid-jogo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-left: 40px;
+}
+
+.grid-jogo img {
+    width: 300px;
+    height: 300px;
+}
+
+.burro {
+    margin-left: auto;
+}
+
+.card {
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .3s, background .3s;
+    text-decoration: none;
+    color: #333;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: #04330e;
+    color: white;
+}
+
+.card img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: surgir 1.2s ease;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #04330e;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    background: #036d1a;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #04330e;
+}
+
+@keyframes surgir {
+    from { opacity: 0; transform: scale(.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .grid-jogo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .burro {
+        margin-left: 0;
+    }
+}
+
+.rodape {
+    background-color: #04330e;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    font-family: 'Iosevka Charon', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    animation: fadeInRodape 1s ease-in-out;
+}
+
+@keyframes fadeInRodape {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.formulario h2 {
+    font-family: "MedievalSharp", sans-serif;
+    font-size: 2rem;
+    color: #04330e;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.formulario h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #04330e;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+.formulario h3 {
+    font-family: "MedievalSharp", sans-serif;
+    font-size: 1.5rem;
+    color: #04330e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo-site {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: "MedievalSharp", sans-serif;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+    animation: fadeTitulo 0.8s ease-out;
+}
+
+.logoJack {
+    width: 65px;
+    height: auto;
+    object-fit: contain;
+    animation: popIn 0.5s ease-out;
+}
+
+@keyframes popIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeTitulo {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -58,17 +58,20 @@ section {
 .grid-jogo {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 420px;
     padding-left: 40px;
 }
 
 .grid-jogo img {
-    width: 300px;
+    width: 490px;
     height: 300px;
 }
 
-.burro {
-    margin-left: auto;
+.burro, .godenot {
+    margin: 0;
+}
+.godenot {
+    margin: center;
 }
 
 .card {

@@ -25,14 +25,13 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 8px rgba (0,0,0,0,2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     animation: deslizarHeader 1s ease;
 }
 
 @keyframes deslizarHeader {
-    from { transform: translateY(-100px);}
-    to {transform: translateY(0); }
-    
+    from { transform: translateY(-100px); }
+    to { transform: translateY(0); }
 }
 
 .menu {
@@ -47,44 +46,57 @@ h1 {
     transition: 0.3s;
 }
 
-.menu a:hover   {
+.menu a:hover {
     transform: scale(1.1);
     color: #fffacd;
 }
-
 
 section {
     padding: 40px 20px;
 }
 
 .grid-jogo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px; 
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-left: 40px;
+}
+
+.grid-jogo img {
+    width: 300px;
+    height: 300px;
+}
+
+.burro {
+    margin-left: auto;
 }
 
 .card {
     padding: 30px;
-    grid-template-columns: 1fr 1fr;
-    background: rgb(255, 255, 255);
+    background: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0,1);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
     text-align: center;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transition: transform .3s, background .3s;
+    text-decoration: none;
+    color: #333;
 }
 
 .card:hover {
-    transform: translateY(8px);
+    transform: translateY(-8px);
     background: #04330e;
+    color: white;
 }
 
 .card img {
-    width: 300px;
+    width: 100%;
+    max-width: 220px;
     height: auto;
-    object-fit: contain;
-    border-radius: auto;
-    margin-bottom: auto;
+    margin-bottom: 10px;
 }
 
 form {
@@ -96,7 +108,7 @@ form {
     animation: surgir 1.2s ease;
 }
 
-input, textArea, select {
+input, textarea, select {
     width: 100%;
     padding: 10px;
     border-radius: 6px;
@@ -119,21 +131,29 @@ button:hover {
     background: #04330e;
 }
 
-@keyframes surgir  {
-    from {opacity: 0; transform: scale(.8);}
-    to {opacity: 1; transform: scale(1);}
-    
+@keyframes surgir {
+    from { opacity: 0; transform: scale(.8); }
+    to { opacity: 1; transform: scale(1); }
 }
-
 
 @media (max-width: 600px) {
     h1 {
         font-size: 1.4rem;
     }
-        .cabecalho {
+
+    .cabecalho {
         flex-direction: column;
         gap: 10px;
         padding: 15px;
+    }
+
+    .grid-jogo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .burro {
+        margin-left: 0;
     }
 }
 
@@ -146,21 +166,19 @@ button:hover {
     font-family: 'Iosevka Charon', sans-serif;
     font-size: 1.1rem;
     letter-spacing: 1px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
     animation: fadeInRodape 1s ease-in-out;
 }
 
 @keyframes fadeInRodape {
     from { opacity: 0; transform: translateY(20px); }
-    to   { opacity: 1; transform: translateY(0); }
+    to { opacity: 1; transform: translateY(0); }
 }
+
 .formulario h2 {
     font-family: "MedievalSharp", sans-serif;
     font-size: 2rem;
@@ -178,7 +196,6 @@ button:hover {
     display: block;
     margin: 10px auto 0;
     border-radius: 5px;
-    
 }
 
 .formulario h3 {
@@ -187,7 +204,6 @@ button:hover {
     color: #04330e;
     text-align: center;
     margin-bottom: 20px;
-    position: relative;
 }
 
 .titulo-site {
@@ -202,7 +218,7 @@ button:hover {
     animation: fadeTitulo 0.8s ease-out;
 }
 
-.logoJack{
+.logoJack {
     width: 65px;
     height: auto;
     object-fit: contain;
@@ -211,11 +227,10 @@ button:hover {
 
 @keyframes popIn {
     from { transform: scale(0.5); opacity: 0; }
-    to   { transform: scale(1); opacity: 1; }
+    to { transform: scale(1); opacity: 1; }
 }
 
 @keyframes fadeTitulo {
     from { opacity: 0; transform: translateY(-20px); }
-    to   { opacity: 1; transform: translateY(0); }
+    to { opacity: 1; transform: translateY(0); }
 }
-

@@ -10,81 +10,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  
-    <header class="cabecalho">
-     <h1 class="titulo-site">
-    <img src="jack-smith.png" alt="Jack Smith" class="logoJack">
-    Jack Smith
-</h1>
+<header class="cabecalho">
+    <h1 class="titulo-site">
+        <img src="jack-smith.png" alt="Jack Smith" class="logoJack">
+        Jack Smith
+    </h1>
 
-        </h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#jogos">Jogos</a></li>
+            <li><a href="#formulario">Contato</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <nav>
-            <ul class="menu">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#jogos">Jogos</a></li>
-                <li><a href="#formulario">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+<section id="sobre" class="sobre">
+    <h2>O que é Jack Smith?</h2>
+    <p>Jacksmith é um jogo de estratégia e simulação bem diferente, criado pela Flipline Studios.</p>
+    <p>No jogo, você controla um burro ferreiro chamado Jack, que fabrica armas para soldados antes das batalhas. Em vez de lutar diretamente, sua função é produzir espadas, arcos, machados e outros equipamentos com boa qualidade, seguindo um processo passo a passo.</p>
+</section>
 
-
-    <section id="sobre" class="sobre">
-        <h2>O que é Jack Smith?</h2>
-        <p>Jacksmith é um jogo de estratégia e simulação bem diferente, criado pela Flipline Studios.</p>
-        <p>     No jogo, você controla um burro ferreiro chamado Jack, que fabrica armas para soldados antes das batalhas. Em vez de lutar diretamente, sua função é produzir espadas, arcos, machados e outros equipamentos com boa qualidade, seguindo um processo passo a passo (derreter o metal, moldar, martelar e montar).</p>
-    </section>
-
-
-        <section id="jogos" class="jogos">
+<section id="jogos" class="jogos">
     <h2>Jogo</h2>
 
     <div class="grid-jogo">
-
         <a class="card" href="https://poki.com/br/g/jacksmith" target="_blank">
             <img src="jack-smith.png" alt="Jack Smith">
             <p>Jack Smith</p>
         </a>
 
+        <img src="burro.jpg" alt="burro" class="burro">
     </div>
 </section>
 
-    
-    <section id="formulario" class="formulario">
-        <h2>Me conta aí</h2>
+<section id="formulario" class="formulario">
+    <h2>Me conta aí</h2>
 
-        <form>
-            <label></label>
-                <h3>Qual seu nome?</h5>
-                <input type="text" placeholder="Digite seu nome">
-            </label>
+    <form>
+        <h3>Qual seu nome?</h3>
+        <input type="text" placeholder="Digite seu nome">
 
-            <label>
-                <h3>Qual fase do jogo você mais gostou?</h3>
-                <input type="text" placeholder="Digite a fase que mais gostou">
-            </label>
+        <h3>Qual fase do jogo você mais gostou?</h3>
+        <input type="text" placeholder="Digite a fase que mais gostou">
 
-            </label>
+        <h3>Explique por qual motivo você gosta dessa fase:</h3>
+        <textarea rows="4" placeholder="Escreva aqui"></textarea>
 
-            <label>
-                <h3>Explique por qual motivo você gosta dessa fase:</h3>
-                <textarea rows="4" placeholder="Escreva aqui"></textarea>
-            </label>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-
-    <footer class="rodape">
-        <p>Jack Smith  2026 </p>
-    </footer>
+<footer class="rodape">
+    <p>Jack Smith 2026</p>
+</footer>
 
 </body>
 </html>

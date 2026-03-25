@@ -20,7 +20,7 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    background: #ff8c5a;
+    background: #04330e;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -65,7 +65,7 @@ section {
 
 .card {
     padding: 30px;
-    background: white;
+    background: rgb(255, 255, 255);
     border-radius: 12px;
     box-shadow: 0 3px 8px rgba(0,0,0,0,1);
     text-align: center;
@@ -74,14 +74,30 @@ section {
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    background: #ffefd5;
+    transform: translateY(8px);
+    background: #04330e;
 }
 
 .card img {
-    width: 100%;
-    height: autor;
+    width: 300px;
+    height: auto;
     object-fit: contain;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: auto;
+    margin-bottom: auto;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: surgir 1.2s ease;
+}
+
+input, textArea, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #04330e;
 }

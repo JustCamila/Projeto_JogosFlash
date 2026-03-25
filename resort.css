@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;/*por enqaunto essa*/
 }
 
 body{
@@ -99,7 +98,11 @@ body{
 .imagem-jogo-clicável {
     flex: 1;                
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 20px;
+    margin-top: 80px;
 }
 
 .imagem-jogo-clicável img {
@@ -111,9 +114,34 @@ body{
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
     cursor: pointer;
+    margin-left: 390px;/**/
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-jogo {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #34b3e4;
+    padding: 15px 40px;
+    border-radius: 12px;
+    border: none;
+    border-bottom: 5px solid #2eaac3;
+    cursor: pointer;
+    transition: all 0.1s;
     margin-left: 390px;
 }
 
+.btn-jogo:hover {
+    background-color: ;
+    transform: translateY(-2px);
+}
+
+.btn-jogo:active {
+    transform: translateY(3px);
+    border-bottom: 0;
+}
 /*estrela*/
 .estrela {
     font-size: 55px;

@@ -1,12 +1,90 @@
 * {
-    margin: 10px;
-    
- 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
-body{
-   background-color: #fdfdfd;
-   font-family: poppins;
+h2{
+    color: #262626;
+    font-size: 25px;
+}
+
+p{
+    color: #262626;
+    font-size: 18px;
+}
+
+.cabecalho {
+    background: linear-gradient(90deg, #ff4b2bc0, #4481ebb6);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    
+
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    color: #2f3542;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    height: 70px;
+    margin-left: 0px;
+    gap: 15px;
+}
+
+.cabecalho h1 {
+    font-family: Bungee;
+    font-size: 27px;
+
+}
+
+.main {
+    margin: 20px;
+}
+
+body {
+    background-color: #fdfdfd;
+    font-family: Nunito;
+
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
 }
 
 .container {
@@ -15,13 +93,15 @@ body{
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    cursor: pointer;
 }
 
-@keyframes aumentar{
+@keyframes aumentar {
     0% {
         transform: scale(1);
     }
-    100%{
+
+    100% {
         transform: scale(1.1);
     }
 
@@ -38,20 +118,30 @@ body{
     transition: 1s;
 }
 
-.box img{
-  width: 100%;
- box-shadow: 0 0 10px black;
+.box img {
+    width: 100%;
+    box-shadow: 0 0 10px black;
 }
 
-.box p{
+.box p {
     font-size: 18px;
     text-align: center;
-    
+
 }
+
 .box:hover {
     background: #ced6e0;
     color: #2f3542;
-    animation: aumentar 1s linear forwards;
+    animation: aumentar 0.3s linear forwards;
 
 }
 
+.footer {
+    grid-area: footer;
+    background: linear-gradient(90deg, #ff4b2b42, #4481eb4f);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}

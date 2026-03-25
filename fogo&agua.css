@@ -25,6 +25,7 @@ p {
     width: 100%;
     box-sizing: border-box;
     flex-wrap: wrap;
+    animation: deslizarHeader 1s ease;
 
 }
 
@@ -105,6 +106,11 @@ body {
         transform: scale(1.1);
     }
 
+}
+
+@keyframes deslizarHeader {
+    from { transform: translateY(-100px);}
+    to {transform: translateY(0); }
 }
 
 .box {

@@ -137,7 +137,6 @@ body {
 }
 
 .footer {
-    grid-area: footer;
     background: linear-gradient(90deg, #ff4b2b42, #4481eb4f);
     color: black;
     display: flex;

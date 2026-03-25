@@ -101,3 +101,25 @@ input, textArea, select {
     border-radius: 6px;
     border: 2px solid #04330e;
 }
+
+button {
+    padding: 12px;
+    border: none;
+    background: #036d1a;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #04330e;
+}
+
+@keyframes surgir  {
+    from {opacity: 0; transform: scale(.8);}
+    to {opacity: 1; transform: scale(1);}
+    
+}

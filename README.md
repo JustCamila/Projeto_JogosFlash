@@ -13,4 +13,3 @@ IDEIAS PALETA DE CORES:
 #A61212
 #F2F2F2
 #262626
--------------------

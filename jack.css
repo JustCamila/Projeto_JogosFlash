@@ -123,3 +123,40 @@ button:hover {
     to {opacity: 1; transform: scale(1);}
     
 }
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+        .cabecalho {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+}
+
+.rodape {
+    background-color: #04330e;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    animation: fadeInRodape 1s ease-in-out;
+}
+
+@keyframes fadeInRodape {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}

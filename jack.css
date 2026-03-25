@@ -29,3 +29,25 @@ h1 {
     animation: deslizarHeader 1s ease;
 }
 
+@keyframes deslizarHeader {
+    from { transform: translateY(-100px);}
+    to {transform: translateY(0); }
+    
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a:hover   {
+    transform: scale(1.1);
+    color: #fffacd;
+}

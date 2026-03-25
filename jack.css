@@ -160,3 +160,52 @@ button:hover {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
 }
+.formulario h2 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 2rem;
+    color: #04330e;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.formulario h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #04330e;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 5px;
+    
+}
+
+.titulo-site {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: "Fredoka", sans-serif;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+    animation: fadeTitulo 0.8s ease-out;
+}
+
+.logoJack{
+    width: 65px;
+    height: auto;
+    object-fit: contain;
+    animation: popIn 0.5s ease-out;
+}
+
+@keyframes popIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeTitulo {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+

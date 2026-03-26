@@ -114,7 +114,7 @@ button:hover {
     to {opacity: 1; transform: scale(1);}
     
 }
-/* responsividade no celular */
+
 @media (max-width: 600px) {
     h1 {
         font-size: 1.4rem;

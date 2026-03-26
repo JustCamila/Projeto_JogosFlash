@@ -204,14 +204,12 @@ body {
     z-index: 1000;        
     max-width: 160px;
     filter: drop-shadow(4px 4px 8px rgba(0,0,0,0.5));
-    position: fixed;
-    bottom: 40px;
-    right: 20px;
-    max-width: 90px;
 }
 
 .fixed img {
-    width: 100%;
+    width: 100%;        
+    height: auto;
+    
 }
 
 @keyframes deslizarHeader {

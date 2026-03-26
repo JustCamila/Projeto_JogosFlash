@@ -38,10 +38,12 @@ h1 {
 .menu {
     display: flex;
     gap: 20px;
+     list-style: none;
 }
 
 .menu a {
     color: white;
+    list-style: none;
     font-weight: bold;
     text-decoration: none;
     transition: 0.3s;
@@ -49,7 +51,7 @@ h1 {
 
 .menu a:hover   {
     transform: scale(1.1);
-    color: #fffacd;
+    color: #262626;
 }
 
 section {

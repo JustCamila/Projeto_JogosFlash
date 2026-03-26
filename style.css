@@ -174,7 +174,7 @@ body {
 .formulario button {
     width: 100%;
     padding: 12px;
-    background: #A61212;
+    background: #fc1414;
     color: white;
     border: none;
     border-radius: 6px;
@@ -184,7 +184,7 @@ body {
 }
 
 .formulario button:hover {
-    background: #084d13;
+    background: #8a0f0f;
 }
 
 .footer {

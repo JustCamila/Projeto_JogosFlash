@@ -7,7 +7,6 @@
 body {
     background-color: #fdfdfd;
     font-family: Nunito;
-    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -99,7 +98,6 @@ body {
 .imagem img {
     width: 100%;
     max-width: 500px;
-    height: auto;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
@@ -114,7 +112,6 @@ body {
 
 .card {
     padding: 20px;
-    
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
@@ -137,43 +134,78 @@ body {
 
 .card img {
     width: 100%;
-    border-radius: 8px;
-    max-width: 240px;;
-    height: auto;
+    max-width: 240px;
+    border-radius: 12px;
     margin-bottom: 10px;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.formulario h2 {
+    font-size: 28px;
+    color: #A61212;
+    margin-bottom: 20px;
+}
+
+.formulario h3 {
+    font-size: 18px;
+    margin: 15px 0 5px;
+    color: #A61212;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #A61212;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-family: Nunito;
+}
+
+.formulario textarea {
+    resize: none;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    background: #A61212;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.formulario button:hover {
+    background: #084d13;
 }
 
 .footer {
     background: #a61212d8;
-    color: rgb(255, 255, 255);
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 25px;
-    margin-bottom: 0;
-}
-
-.footer h3 {
-    font-size: 16px;
-}
-
-.footer p {
-    font-size: 14px;
 }
 
 .fixed {
     position: fixed;
     bottom: 40px;
     right: 20px;
-    z-index: 1000;
     max-width: 90px;
-    filter: drop-shadow(4px 4px 8px rgba(0,0,0,0.5));
 }
 
 .fixed img {
     width: 100%;
-    height: auto;
 }
 
 @keyframes deslizarHeader {
